@@ -1,4 +1,4 @@
 # CodeChefLearnDSA
-Code Chef DSA Solutions /n
-This is for educational purposes only. /n 
-DO NOT MISUSE /n
+Code Chef DSA Solutions -
+This is for educational purposes only. 
+DO NOT MISUSE
