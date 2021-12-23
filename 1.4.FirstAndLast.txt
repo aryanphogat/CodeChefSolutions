@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,n;
+	cin>>t;
+	for(int i=0; i<t ;i++)
+	{
+	    int rem,remtemp;
+	    cin>>n;
+	    rem=n%10;
+	    while(n!=0){
+	    remtemp=n%10;
+	    n=n/10;
+	    }
+	    cout<<remtemp+rem<<endl;
+	}
+	return 0;
+}
