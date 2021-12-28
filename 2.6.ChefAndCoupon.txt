@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,d,c,a1,a2,a3,b1,b2,b3,d1,d2;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>d>>c;
+	    cin>>a1>>a2>>a3;
+	    cin>>b1>>b2>>b3;
+	    if(a1+a2+a3>=150)
+	    d1=a1+a2+a3;
+	    if(a1+a2+a3<150)
+	    d1=a1+a2+a3+d;
+	    if(b1+b2+b3>=150)
+	    d2=b1+b2+b3;
+	    if(b1+b2+b3<150)
+	    d2=b1+b2+b3+d;
+	    if((d1+d2+c)<(a1+a2+a3+b1+b2+b3+d+d))
+	    {
+	        cout<<"YES";
+	    }
+	    else
+	    {
+	        cout<<"NO";
+	    }
+	    cout<<endl;
+	    t--;
+	}
+	return 0;
+}
