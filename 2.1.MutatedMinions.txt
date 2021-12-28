@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,k,r;
+    cin>>t;
+	while(t>0)
+	{   
+	    cin>>n>>k;
+	    int a[n];
+	    int w=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>a[i];
+	        r=a[i]+k;
+	        if(r%7==0)
+	        {
+	            w++;
+	        }
+	    }
+	    cout<<w<<endl;
+	t--;
+	}
+	return 0;
+}
