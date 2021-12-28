@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int r,o,c;
+    cin>>r>>o>>c;
+    int max_score=c+(20-o)*36;
+    if(r<max_score)
+    {
+        cout<<"YES";
+    }
+    else
+    {
+        cout<<"NO";
+    }
+	return 0;
+}
