@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t>0)
+    {
+        string s1,s2;
+        int i=0,p=0;
+        cin>>s1>>s2;
+        while(s1[i])
+        {
+            if(s1[i]==s2[i]||s1[i]=='?'||s2[i]=='?')
+            {
+                i++;
+            }
+            else
+            {
+                p=1;
+                break;
+            }
+            
+        }
+        if(p==1)
+        {
+            cout<<"No"<<endl;
+        }
+        else
+        {
+            cout<<"Yes"<<endl;
+        }
+        t--;
+    } 
+	return 0;
+}
