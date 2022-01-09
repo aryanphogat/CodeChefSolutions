@@ -1,0 +1,58 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int R,L;
+	std::cin>>R;
+	while(R--){
+        std::cin>>L;
+        char a[L];
+
+        for(int i = 0; i < L; i++){
+            std::cin>>a[i];
+        }
+        char tmp = '.';
+        
+        for(int i = 0; i < L; i++){
+        
+            if(a[i] == 'H' && tmp == '.') {
+                
+                tmp = a[i];
+            }
+            else if(a[i] == 'H' && tmp == 'H'){
+                
+
+                tmp = 'E';
+                break;
+            }
+            else if(a[i] == 'T' && tmp == 'H'){ 
+                
+                tmp = '.';
+            }
+            else if(a[i] == 'T' && tmp == '.'){
+                
+
+                tmp = 'E';
+                break;
+            }
+            else {
+                
+
+                    continue;
+            }
+
+        }
+        if(tmp == '.')
+        {
+            cout << "Valid"<<endl;
+        }
+        else {
+            cout << "Invalid"<<endl;
+        }
+
+
+	   
+	}
+	return 0;
+}

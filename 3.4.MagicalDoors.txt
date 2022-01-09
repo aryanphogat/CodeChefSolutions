@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    while (n--)
+    {
+        string str;
+        cin>>str;
+        char curr;
+        int s;
+        curr='1';
+        int ans;
+        ans=0;
+        for (s=0;s<str.size();s++)
+        {
+            if (str[s]==curr)
+            {
+                continue;
+            }
+            if (str[s]!=curr&curr=='0')
+            {
+                ans++;
+                curr='1';
+                continue;
+            }
+            if (str[s]!=curr&&curr=='1')
+            {
+                ans++;
+                curr='0';
+                continue;
+            }
+        }
+        cout<<ans<<'\n';
+    }
+    return 0;
+}
